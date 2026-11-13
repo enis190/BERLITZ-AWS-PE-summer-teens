@@ -1,0 +1,268 @@
+.comparacion {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #004fef;
+  background-image: url("../img/vector-comparacion.png");
+  background-size: 100% 100%;
+  h3 {
+    font-family: "IBMPlexSans-Bold";
+    color: #fff;
+    font-size: 2.4rem;
+    span {
+      font-family: "IBMPlexSans-Medium";
+      display: block;
+      font-size: 1.7rem;
+    }
+  }
+  .bloques {
+    margin-top: 150px;
+    .head-txt-block-fondo {
+      p {
+        font-size: 1.2rem;
+        color: #fff;
+        text-transform: uppercase;
+        font-family: "IBMPlexSans-Bold";
+      }
+    }
+
+    .c-block-fondo {
+      background-color: #fff;
+      padding: 20px 20px;
+      border-radius: 10px;
+      .txt-block-fondo,
+      .txt-block-1,
+      .txt-block-2 {
+        .item {
+          padding: 10px 15px;
+          border-bottom: 1px solid #bfd3fb;
+          min-height: 75px;
+
+          p {
+            color: 002691;
+            font-family: "IBMPlexSans-Bold";
+            margin: 0px;
+            color: #002691;
+            font-size: 1rem;
+          }
+        }
+      }
+      .txt-block-fondo {
+        .item {
+          display: flex;
+          align-items: center; /* centra verticalmente */
+          justify-content: flex-start; /* alinea a la izquierda */
+        }
+      }
+      .txt-block-1,
+      .txt-block-2 {
+        padding-right: 20px;
+        padding-left: 20px;
+        text-align: center;
+        position: relative;
+        .c-block-sup {
+          position: relative;
+        }
+        .c-block {
+          background: #3cdf86;
+          background: linear-gradient(
+            158deg,
+            rgba(60, 223, 134, 1) 0%,
+            rgba(22, 37, 204, 1) 100%
+          );
+          box-shadow: 8px 10px 15px -7px rgba(0, 0, 0, 0.43);
+          -webkit-box-shadow: 8px 10px 15px -7px rgba(0, 0, 0, 0.43);
+          -moz-box-shadow: 8px 10px 15px -7px rgba(0, 0, 0, 0.43);
+          padding-right: 20px;
+          padding-left: 20px;
+          border-radius: 25px;
+          position: absolute;
+          width: 100%;
+          margin-top: -110px;
+          .item {
+            border-bottom: 1px solid #61f0d0;
+            min-height: 75px;
+            display: flex;
+            align-items: center; /* centra verticalmente */
+            justify-content: center; /* centra horizontalmente */
+            p {
+              color: #fff;
+              font-family: "IBMPlexSans-Regular";
+              font-size: 1rem;
+            }
+            &.item-head {
+              padding-bottom: 10px;
+              display: flex;
+              align-items: center; /* centra verticalmente */
+              justify-content: center; /* centra horizontalmente */
+              min-height: 110px;
+              h3 {
+                //height: 50px;
+                text-transform: uppercase;
+                margin-top: 10px;
+                font-size: 1.8rem;
+              }
+            }
+            &.item-footer {
+              padding-top: 30px;
+              padding-bottom: 30px;
+              border: 0px;
+            }
+          }
+        }
+      }
+      .txt-block-2 {
+        .c-block {
+          background: #1625cc;
+          background: linear-gradient(
+            16deg,
+            rgba(22, 37, 204, 1) 0%,
+            rgba(255, 73, 92, 1) 100%
+          );
+          .item {
+            border-bottom: 1px solid #e86cc1;
+          }
+        }
+      }
+    }
+  }
+  .c-cta {
+    margin-top: 100px;
+  }
+
+  .bloques-xs {
+    margin-top: 60px;
+    .c-head {
+      display: flex;
+      padding: 0;
+      .c-block-1,
+      .c-block-2 {
+        text-align: center;
+        background: #2b87a7;
+        background: linear-gradient(
+          0deg,
+          rgba(43, 135, 167, 1) 0%,
+          rgba(55, 200, 143, 1) 100%
+        );
+        padding-top: 20px;
+        padding-bottom: 20px;
+        h3 {
+          font-size: 1.2rem;
+          color: #fff;
+          text-transform: uppercase;
+          margin: 0px;
+        }
+      }
+      .c-block-2 {
+        background: #903791;
+        background: linear-gradient(
+          0deg,
+          rgba(144, 55, 145, 1) 0%,
+          rgba(217, 67, 110, 1) 100%
+        );
+      }
+    }
+    .c-body {
+      background-color: #fff;
+      padding: 0px;
+      text-align: center;
+      .titulo {
+        border-top: 1px solid #bfd3fb;
+        padding: 10px 5px;
+        position: relative;
+        box-shadow: 1px 8px 24px -7px rgba(0, 0, 0, 0.14);
+        -webkit-box-shadow: 1px 8px 24px -7px rgba(0, 0, 0, 0.14);
+        -moz-box-shadow: 1px 8px 24px -7px rgba(0, 0, 0, 0.14);
+        p {
+          margin: 0px;
+          color: #002691;
+          font-family: "IBMPlexSans-Bold";
+          font-size: 1.1rem;
+        }
+      }
+      .det {
+        .c-block-1,
+        .c-block-2 {
+          padding: 15px 7px;
+          background-color: #ebfffd;
+          p {
+            color: #002691;
+            font-family: "IBMPlexSans-regular";
+            font-size: 1.1rem;
+            margin: 0px;
+          }
+        }
+        .c-block-2 {
+          background-color: #fff5f7;
+        }
+      }
+    }
+  }
+}
+
+.c-head.fixed {
+  position: fixed;
+  top: 75px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: white;
+}
+
+.c-placeholder {
+  height: 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .comparacion {
+    padding-bottom: 0px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .c-head {
+    &.fixed {
+      top: 0px;
+    }
+  }
+  .comparacion {
+    padding-bottom: 0px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .comparacion {
+    .titulo {
+      position: relative;
+      &::after {
+        content: url("../img/after-lineas.png");
+        position: absolute;
+        right: -20px;
+        top: -10px;
+        scale: 0.8;
+      }
+    }
+    .cta-1-lg{
+      position: relative;
+      &::after{
+        content: url("../img/after-comparacion-ingles.png");
+        position: absolute;
+        right: -60px;
+        top: -45px;
+      }
+    }
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

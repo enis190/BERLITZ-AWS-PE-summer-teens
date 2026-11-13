@@ -1,1 +1,1 @@
-# BERLITZ-AWS-PE-summer-teens
+# BERLITZ-AWS-PE-ingles-intensivo

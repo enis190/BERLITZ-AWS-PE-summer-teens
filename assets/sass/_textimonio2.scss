@@ -1,0 +1,211 @@
+.textimonio2 {
+  // padding-top: 70px;
+  // padding-bottom: 70px;
+  background-color: #eff6ff;
+
+  background: #004fef;
+  background: linear-gradient(
+    29deg,
+    rgba(0, 79, 239, 1) 0%,
+    rgba(60, 223, 134, 1) 100%
+  );
+
+  //background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
+  h2 {
+    color: #002691;
+    font-family: "IBMPlexSans-Bold";
+  }
+  h4 {
+    color: #002691;
+    font-family: "IBMPlexSans-Regular";
+    font-size: 1.2rem;
+  }
+  p {
+    color: #004fef;
+    font-family: "IBMPlexSans-BoldItalic";
+    font-size: 1.2rem;
+  }
+
+  .c-play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .c-pulse-1,
+  .c-pulse-2,
+  .c-pulse-3 {
+    background-color: $COLOR_1;
+    content: "";
+    position: absolute;
+    display: flex;
+    width: 70px;
+    height: 70px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6);
+    -moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6);
+    -ms-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6);
+    -o-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6);
+    -webkit-animation: ripple 3s infinite;
+    -moz-animation: ripple 3s infinite;
+    -ms-animation: ripple 3s infinite;
+    -o-animation: ripple 3s infinite;
+    animation: ripple 3s infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .c-fa {
+      font-size: 1.3rem;
+      color: #fff;
+    }
+  }
+  .c-pulse-2 {
+    -webkit-animation-delay: 0.9s;
+    -moz-animation-delay: 0.9s;
+    -ms-animation-delay: 0.9s;
+    -o-animation-delay: 0.9s;
+    animation-delay: 0.9s;
+  }
+
+  .c-pulse-3 {
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+    -ms-animation-delay: 0.6s;
+    -o-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+  }
+
+  .c-block-1 {
+    background-color: red;
+    clip-path: polygon(0% 0%, 90% 0, 100% 50%, 90% 100%, 0% 100%);
+    padding-top: 170px;
+    padding-bottom: 170px;
+    padding-left: 90px;
+    background-color: #eff6ff;
+    padding-right: 70px;
+  }
+  .c-block-2 {
+    padding-right: 90px;
+    position: relative;
+    a {
+      position: absolute;
+    }
+    .c-block-txt {
+      img {
+        max-height: 300px;
+      }
+    }
+  }
+}
+
+@-webkit-keyframes ripple {
+  70% {
+    box-shadow: 0 0 0 50px rgba(253, 167, 0, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(253, 167, 0, 0);
+  }
+}
+
+@keyframes ripple {
+  70% {
+    box-shadow: 0 0 0 50px rgba(253, 167, 0, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(253, 167, 0, 0);
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .textimonio2 {
+    background: #0b4ab8;
+    background: linear-gradient(
+      27deg,
+      rgba(11, 74, 184, 1) 0%,
+      rgba(50, 168, 115, 1) 61%,
+      rgba(50, 168, 115, 1) 100%
+    );
+    .c-play {
+      height: 300px;
+      //background-image: url('https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/captura%201%20(2).png');
+      background-size: cover;
+    }
+    .c-block-1 {
+      clip-path: polygon(0% 0%, 100% 0, 100% 95%, 50% 100%, 0 95%);
+      padding: 50px;
+    }
+    .c-block-2 {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) and (orientation: landscape) {
+  /* Estilos específicos para celulares en horizontal */
+  .textimonio2 {
+    .c-play {
+      height: 350px;
+      //background-image: url('https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/captura%201%20(2).png');
+      background-size: cover;
+    }
+    .c-block-1 {
+      clip-path: polygon(0% 0%, 100% 0, 100% 95%, 50% 100%, 0 95%);
+      padding: 50px;
+    }
+    .c-block-2 {
+      padding-left: 190px;
+      padding-right: 190px;
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .textimonio2 {
+    // padding-top: 150px;
+    // padding-bottom: 150px;
+    //background-image: url("https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/EFECTO%20(1).png");
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .textimonio2{
+    .c-block-1{
+      position: relative;
+      &::after{
+        content: url("../img/after-video.png");
+        position: absolute;
+                top: 30px;
+        right: 100px;
+        scale: 0.8;
+      }
+    }
+    
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Berlitz Perú - Summer Program 2027</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon-32x32.png" />
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/revolution/navigation.min.css" />
+    <link rel="stylesheet" href="assets/css/revolution/settings.min.css" />
+    <link rel="stylesheet" href="assets/css/cmln-style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.min.css" />
+
+
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                "gtm.start": new Date().getTime(),
+                event: "gtm.js",
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != "dataLayer" ? "&l=" + l : "";
+            j.async = true;
+            j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, "script", "dataLayer", "GTM-PGFZW8S");
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGFZW8S" height="0" width="0"
+            style="display: none; visibility: hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="t_header"></div>
+
+    <!-- loader -->
+    <div class="jm-loadingpage">
+        <table border="0">
+            <tr>
+                <td>
+                    <img class="img-fluid" src="assets/img/berlitz-logo.png" loading="lazy" />
+                </td>
+            </tr>
+            <tr>
+                <td><span class="loader"></span></td>
+            </tr>
+        </table>
+    </div>
+    <!-- end loader -->
+
+    <!-- Para bordes redondeados en poligonos -->
+    <svg style="visibility: hidden; position: absolute" width="0" height="0" xmlns="http://www.w3.org/2000/svg"
+        version="1.1">
+        <defs>
+            <filter id="round">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                    result="goo" />
+                <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+            </filter>
+        </defs>
+    </svg>
+
+
+
+
+
+    <!-- header -->
+    <div id="header_page" class="container-fluid header">
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-4 col-md-2 logo d-block d-sm-none">
+                    <picture>
+                        <source srcset="assets/img/berlitz-logo.png" type="image/png" />
+                        <img class="img-fluid" data-src="assets/img/berlitz-logo.png" loading="lazy" />
+                    </picture>
+                </div>
+                <div class="col-md-5 offset-md-3 call">
+                    <a id="btn-menu-xs-abrir" class="btn-menu d-block d-lg-none"><i class="fa-solid fa-bars"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end header -->
+
+
+
+
+
+    <div id="slider_page" class="container-fluid cmln-slider header2"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12" style="padding: 0px">
+                <a href="javascript:click_section('formulario')">
+                    <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/Summer-HERO-desk.png"
+                        alt="" class="img-fluid d-none d-sm-block" style="width: 100%" />
+                    <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/Teens_Mobile_banner.png"
+                        alt="" class="img-fluid d-block d-sm-none" style="width: 100%" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="barra_inferior_banner2" style="background-color: #0013b9;">
+        <div class="reveal_div reveal reveal_scale_2"> <span class="bolder">Taller de inglés y debate para
+                adolescentes</span> <span class="d-none d-sm-block"></span></div>
+    </div>
+
+
+
+    <!-- INFO -->
+    <div id="slider_page" class="container-fluid cmln-slider"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12" style="padding: 0px">
+                <a href="javascript:click_section('crash')">
+                    <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/Teens_desk_info.png"
+                        alt="" class="img-fluid d-none d-sm-block" style="width: 100%" />
+                    <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/Teens_Mobile_info.png"
+                        alt="" class="img-fluid d-block d-sm-none" style="width: 100%" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- END INFO -->
+
+
+    <!-- MENU -->
+    <div class="container-fluid c-menu d-none d-lg-block">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <ul>
+                        <!-- <li>
+                                <a
+                                    href="javascript:click_section('promos')"
+                                    class="i_menu menu_1">Promoción</a>
+                            </li> -->
+
+                        <li>
+                            <a href="javascript:click_section('header')" class="i_menu menu_2">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="javascript:click_section('formulario')" class="i_menu menu_4">Registrarse</a>
+                        </li>
+                        <li>
+                            <a href="javascript:click_section('header')" class="i_menu menu_5">Programa</a>
+                        </li>
+                        <li>
+                            <a href="javascript:click_section('slider2')" class="i_menu menu_6">Más información</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END MENU -->
+
+    <!-- menu xs -->
+    <div id="div_menu_xs" class="container menu-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 item cerrar">
+                    <i id="btn-menu-xs-cerrar" class="fa-solid fa-circle-xmark fa-cmln"></i>
+                </div>
+                <!-- <div class="col-12 item">
+                        <a href="javascript:click_section('promos')" class="i_menu menu_1">Promoción</a>
+                    </div> -->
+
+
+                <div class="col-12 item">
+                    <a href="javascript:click_section('header2')" class="i_menu menu_2">Inicio</a>
+                </div>
+                <div class="col-12 item">
+                    <a href="javascript:click_section('formulario')" class="i_menu menu_3">Registrarse</a>
+                </div>
+                <div class="col-12 item">
+                    <a href="javascript:click_section('header2')" class="i_menu menu_5">Programa</a>
+                </div>
+                <div class="col-12 item">
+                    <a href="javascript:click_section('slider2')" class="i_menu menu_6">Más información</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!--end menu xs -->
+
+
+
+
+    <!-- FORM -->
+    <div class="container-fluid formulario">
+        <div class="container-lg c-container">
+            <div class="row row-nube">
+                <div class="col-md-12 nube"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-lg-3 offset-lg-1 txt fade-in-left text-center">
+                    <article class="reveal reveal_left_1">
+                        <div class="promo">
+                            <p class="promo-top">¡Registra a tu hij@</p>
+                            <p class="promo-ahora">ahora!</p>
+
+                            <div class="promo-circle">
+                                <span class="promo-tag">PREVENTA</span>
+                                <span class="promo-hasta">HASTA</span>
+                                <span class="promo-num">32<span class="promo-pct">%</span></span>
+                                <span class="promo-dscto">DSCTO.*</span>
+                            </div>
+                        </div>
+
+                    </article>
+                </div>
+                <div class="col-sm-7 offset-sm-1 c-hs-form fade-in-right">
+                    <p class="completaform">
+                        Completa el formulario y<br>
+                        <span class="completa-resaltado">recibe un email con toda la info del programa.</span>
+                    </p>
+                    <!-- FORM HS -->
+                    <div id="hs_form_target_widget_1614708359277"></div>
+
+                    <script
+                        src="https://peru.berlitzuavp.live/hs/hsstatic/cos-i18n/static-1.53/bundles/project.js"></script>
+
+                    <script data-hs-allowed="true" src="https://peru.berlitzuavp.live/_hcms/forms/v2.js"></script>
+
+                    <script data-hs-allowed="true">
+                        var options = {
+                            portalId: "9068661",
+                            formId: "2c0dbbf5-4e5e-4342-bbc1-61845b40a53e",
+                            formInstanceId: "673",
+                            pageId: "153646615830",
+                            region: "na1",
+
+                            pageName: "Berlitz Per\u00FA - Inglés Intensivo",
+
+                            redirectUrl: "https://berlitz-marketing.com.pe/gracias",
+
+                            css: "",
+                            target: "#hs_form_target_widget_1614708359277",
+
+                            contentType: "landing-page",
+
+                            formsBaseUrl: "/_hcms/forms/",
+
+                            formData: {
+                                cssClass: "hs-form stacked hs-custom-form",
+                            },
+                            onFormReady: function ($form) {
+                                $(".hs-fieldtype-intl-phone select").val("PE");
+                                $(".hs-fieldtype-intl-phone select").trigger("change");
+                            },
+                        };
+
+                        options.getExtraMetaDataBeforeSubmit = function () {
+                            var metadata = {};
+
+                            if (hbspt.targetedContentMetadata) {
+                                var count = hbspt.targetedContentMetadata.length;
+                                var targetedContentData = [];
+                                for (var i = 0; i < count; i++) {
+                                    var tc = hbspt.targetedContentMetadata[i];
+                                    if (tc.length !== 3) {
+                                        continue;
+                                    }
+                                    targetedContentData.push({
+                                        definitionId: tc[0],
+                                        criterionId: tc[1],
+                                        smartTypeId: tc[2],
+                                    });
+                                }
+                                metadata["targetedContentMetadata"] =
+                                    JSON.stringify(targetedContentData);
+                            }
+
+                            return metadata;
+                        };
+
+                        hbspt.forms.create(options);
+                    </script>
+                    <!-- END FORM HS -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END FORM -->
+
+    <!-- INFO-2 -->
+    <div id="slider_page2" class="container-fluid cmln-slider slider2"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12" style="padding: 0px">
+                <a href="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/pdf/Brochure_%20Summer_2027.pdf"
+                    target="_blank">
+                    <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/Banner_azul_desktop.png"
+                        alt="" class="img-fluid d-none d-sm-block" style="width: 100%" />
+                    <img src="https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/banner_azul_mobile.png"
+                        alt="" class="img-fluid d-block d-sm-none" style="width: 100%" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- END INFO-2 -->
+
+
+    <div class="container-fluid footer2">
+        <div class="container text-center">
+            <p>Independently owned and operated</p>
+        </div>
+    </div>
+
+    <div class="container-fluid footer">
+        <div class="container text-center">© 2026 Berlitz Corporation</div>
+    </div>
+    <!--end footer -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="player_otg_1" style="aspect-ratio: 4 / 5; width: 100%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="javascript:click_section('t_header')" class="c-subir"><i class="fa fa-angle-up"></i></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <script src="assets/js/jquery.min.js"></script>
+
+    <script src="assets/slick/slick.js"></script>
+
+    <!--to view items on reach-->
+    <script src="assets/js/jquery.appear.min.js"></script>
+    <!--Owl Slider-->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!--Parallax Background-->
+    <script src="assets/js/parallaxie.min.js"></script>
+    <!--Cubefolio Gallery-->
+    <script src="assets/js/jquery.cubeportfolio.min.js"></script>
+    <!--Fancybox js-->
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <!--tooltip js-->
+    <script src="assets/js/tooltipster.min.js"></script>
+
+    <!--Revolution SLider-->
+    <script src="assets/js/revolution/jquery.themepunch.tools.min.js"></script>
+    <script src="assets/js/revolution/jquery.themepunch.revolution.min.js"></script>
+    <script src="assets/js/revolution/extensions/revolution.extension.actions.min.js"></script>
+    <script src="assets/js/revolution/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="assets/js/revolution/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="assets/js/revolution/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="assets/js/revolution/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="assets/js/revolution/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="assets/js/revolution/extensions/revolution.extension.slideanims.min.js"></script>
+
+    <!--custom functions and script-->
+    <script src="assets/js/functions.js"></script>
+    <script src="assets/js/cmln.js"></script>
+
+    <script src="assets/js/cmln_2.js"></script>
+
+    <script>
+        // 2. This code loads the IFrame Player API code asynchronously.
+        var tag = document.createElement("script");
+
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName("script")[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        // 3. This function creates an <iframe> (and YouTube player)
+        //    after the API code downloads.
+        var player1;
+
+        function onYouTubeIframeAPIReady() {
+            // Primer video
+            player1 = new YT.Player("player_otg_1", {
+                width: "100%",
+                height: "100%",
+                videoId: "qMwiHNQUbp8",
+                events: {
+                    onStateChange: onPlayerStateChange1,
+                },
+            });
+
+        }
+
+        // 4. Remove the playVideo() call in onPlayerReady
+        // These functions are no longer needed
+
+        // 5. The API calls this function when the player's state changes.
+        //    The function indicates that when playing a video (state=1),
+        //    the player should play for six seconds and then stop.
+        var done1 = false;
+
+        function onPlayerStateChange1(event) {
+            if (event.data == YT.PlayerState.PLAYING && !done1) {
+                done1 = true;
+            }
+        }
+
+        function stopVideo1() {
+            player1.stopVideo();
+        }
+
+        // Detectar apertura y cierre de los modales
+        $("#exampleModal").on("shown.bs.modal", function () {
+            player1.playVideo(); // Reproduce el primer video cuando se abre el primer modal
+        });
+
+        $("#exampleModal").on("hidden.bs.modal", function () {
+            stopVideo1(); // Detiene el primer video cuando se cierra el primer modal
+        });
+
+    </script>
+
+
+
+    <script src="assets/js/luxon.min.js"></script>
+    <script>
+        const fechaEvento = luxon.DateTime.fromISO('2026-06-30T23:59:59', {
+            zone: 'America/Lima'
+        });
+
+        function actualizarContador() {
+            const diasEl = document.getElementById('dias');
+            const horasEl = document.getElementById('horas');
+            const minutosEl = document.getElementById('minutos');
+            const segundosEl = document.getElementById('segundos');
+
+            if (!diasEl || !horasEl || !minutosEl || !segundosEl) {
+                return;
+            }
+
+            const zonaHorariaLocal = Intl.DateTimeFormat().resolvedOptions().timeZone;
+            const ahora = luxon.DateTime.local().setZone(zonaHorariaLocal);
+            const diferencia = fechaEvento.diff(ahora);
+
+            if (diferencia.as('milliseconds') > 0) {
+                const {
+                    days,
+                    hours,
+                    minutes,
+                    seconds
+                } = diferencia.shiftTo('days', 'hours', 'minutes', 'seconds').toObject();
+
+                diasEl.innerHTML = `${String(days).padStart(2, '0')}`;
+                horasEl.innerHTML = `${String(hours).padStart(2, '0')}`;
+                minutosEl.innerHTML = `${String(minutes).padStart(2, '0')}`;
+                segundosEl.innerHTML = `${String(Math.floor(seconds)).padStart(2, '0')}`;
+            } else {
+                diasEl.innerHTML = '00';
+                horasEl.innerHTML = '00';
+                minutosEl.innerHTML = '00';
+                segundosEl.innerHTML = '00';
+            }
+        }
+
+        if (document.getElementById('dias')) {
+            setInterval(actualizarContador, 1000);
+        }
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            var $container = $(".bloques-xs");
+            var $head = $container.find(".c-head");
+            var $footer = $container.find(".c-fotter");
+            var $placeholder = $('<div class="c-placeholder"></div>').insertAfter($head);
+            var headHeight = $head.outerHeight();
+            var isFixed = false;
+
+            $(window).on("scroll", function () {
+                var scrollTop = $(window).scrollTop() + 75;
+                var containerTop = $container.offset().top;
+                var footerTop = $footer.offset().top;
+
+                if (scrollTop >= containerTop && scrollTop + headHeight < footerTop) {
+                    if (!isFixed) {
+                        isFixed = true;
+                        $head.addClass("fixed");
+                        $placeholder.height(headHeight);
+                    }
+                } else {
+                    if (isFixed) {
+                        isFixed = false;
+                        $head.removeClass("fixed");
+                        $placeholder.height(0);
+                    }
+                }
+            });
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>

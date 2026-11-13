@@ -1,0 +1,121 @@
+.ventajas{
+    background-color: #F1F6FF;
+    
+
+    .btn-1 {
+        padding-left: 25px;
+        .c-fa{
+            animation: c_keyframe_2 2s;
+                    -webkit-animation: c_keyframe_2 2s;
+                    -moz-animation: c_keyframe_2 2s;
+                    animation-iteration-count: infinite;
+                    -webkit-animation-iteration-count: infinite;
+                    -moz-animation-iteration-count: infinite;
+        }
+    }
+
+    
+    .slider{
+        .item{
+            padding: 25px;
+            padding-top: 70px;
+            .c-block{
+                padding: 20px;
+                border-radius: 30px;
+                transition: 0.3s;
+                background-color: #FFF;
+                min-height: 250px;
+                -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+                -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+                box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+                
+                &:hover{
+                    background-color: #FFF;
+                }
+                img{
+                    margin-top: -80px;
+                    max-height: 130px;
+                    margin-bottom: 15px;
+                }
+                h3{
+                    color: #000;
+                    font-family: 'IBMPlexSans-BoldItalic'; 
+                    font-size: 1rem;
+                    display: inline;
+                    span{
+                        color: $COLOR_1;
+                        font-family: 'IBMPlexSans-SemiBoldItalic'; 
+                    }
+                }
+                p{
+                    display: inline;
+                    font-size: .9rem;
+                    span{
+                        color: $COLOR_1;
+                    }
+                }
+            }
+        }
+    }
+    .slick-dots {
+        li {
+            button {
+                &::before {
+                    background-color: #000;
+                    border-radius: 50%;
+                    width: 13px;
+                    height: 13px;
+                    content: '';
+                    transition: 0.3s;
+                }
+            }
+
+            &.slick-active {
+                button {
+                    &::before {
+                        background-color: $COLOR_1;
+                        opacity: 1 !important;
+                        width: 25px;
+                        border-radius: 8px;
+                        margin-left: -5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .ventajas{
+        //background-image: url('../img/olas_1.png');
+    background-position: top right;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 50px;
+    &::after{
+        //content: url('../img/elementos7.png');
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        right: 250px;
+        transform: scale(0.6);
+        top: -50px;
+        z-index: 1;
+        
+        }
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

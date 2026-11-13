@@ -1,0 +1,63 @@
+.metodo {
+  h3 {
+    &.titulo {
+      font-family: "IBMPlexSans-Bold";
+      color: #002691;
+      font-size: 2.4rem;
+      span{
+        font-family: 'IBMPlexSans-Medium';
+            display: block;
+            font-size: 1.7rem;
+      }
+    }
+  }
+  .txt {
+    h2 {
+      color: #002691;
+    }
+    h3 {
+      font-family: "IBMPlexSans-Regular";
+      color: #778299;
+      font-size: 1.1rem;
+      span {
+        font-family: "IBMPlexSans-Bold";
+      }
+    }
+  }
+  p {
+    color: #002691;
+    &.sup {
+      color: #002691;
+      font-size: 1.2rem;
+      font {
+        font-family: "IBMPlexSans-BoldItalic";
+        &.azul {
+          color: #002691;
+        }
+      }
+    }
+    &.mt-4 {
+      font-size: 0.95rem;
+    }
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

@@ -1,0 +1,32 @@
+.promos {
+  background: #3cdf86;
+  background: linear-gradient(
+    109deg,
+    rgba(60, 223, 134, 1) 1%,
+    rgba(0, 79, 239, 1) 54%,
+    rgba(255, 73, 92, 1) 100%
+  );
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

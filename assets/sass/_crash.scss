@@ -1,0 +1,127 @@
+.crash {
+  background: #0151ed;
+  background: linear-gradient(
+    27deg,
+    rgba(1, 81, 237, 1) 0%,
+    rgba(57, 217, 139, 1) 100%
+  );
+  position: relative;
+  overflow: hidden;
+
+  .c-container {
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .img-titulo {
+    max-height: 130px;
+  }
+  p {
+    color: #fff;
+  }
+  .c-block-1 {
+    border: 2px solid #3cdf86;
+    display: inline-block;
+    padding: 8px 25px;
+    border-radius: 50px;
+    h3 {
+      margin: 0px;
+      color: #fff;
+      font-family: "IBMPlexSans-Light";
+      span {
+        font-family: "IBMPlexSans-BoldItalic";
+      }
+    }
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
+    li {
+      color: #fff;
+      position: relative;
+      padding-left: 25px; /* espacio para la viñeta */
+      margin-bottom: 10px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 5px;
+        width: 12px;
+        height: 6px;
+        border-radius: 10px;
+        background-color: #3cdf86;
+      }
+    }
+  }
+
+  &.crash-2 {
+    background: #ff495c;
+    background: linear-gradient(
+      149deg,
+      rgba(255, 73, 92, 1) 0%,
+      rgba(0, 79, 239, 1) 100%
+    );
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .crash {
+    &::before {
+      content: url("../img/after-crash.png");
+      position: absolute;
+      top: 0px;
+      right: 0px;
+    }
+    &.crash-2 {
+      &::before {
+        content: url("../img/after-crash-2.png");
+        left: 0px;
+        right: inherit;
+      }
+      .img-span {
+        position: relative;
+        &::before {
+          content: url("../img/after-ingles-2.png");
+          position: absolute;
+          //width: 10px;
+          //height: 10px;
+          //background-color: red;
+          right: -260px;
+          margin-top: -60px;
+        }
+      }
+    }
+    .img-span {
+      position: relative;
+      &::before {
+        content: url("../img/after-ingles.png");
+        position: absolute;
+        //width: 10px;
+        //height: 10px;
+        //background-color: red;
+        right: -300px;
+        margin-top: -50px;
+      }
+    }
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
