@@ -589,7 +589,7 @@ p {
       text-decoration: none;
       color: #FFF;
       border-radius: 50%;
-      background-color: #FF495C;
+      /* background-color: #FF495C; */
       justify-content: center;
       align-items: center;
       z-index: 9999999;
@@ -1372,7 +1372,7 @@ p {
   color: #FFF; }
 
 .footer2 {
-  background-color: #FF495C;
+  background-color: #0013b9;
   padding: 15px 25px 15px 25px; }
   .footer2 p {
     margin: 0px;
@@ -1621,14 +1621,14 @@ p {
   padding:5px 20px;
   border-radius:8px;
   background:#1b1464;
-  font-size:1.05rem;
+  font-size:1.5rem;
   font-weight:800;
   letter-spacing:.04em;
   white-space:nowrap;
 }
 
 .promo-hasta{
-  margin-top:20px;
+  /* margin-top:20px; */
   font-size:1.5rem;
   font-weight:800;
 }
@@ -1641,13 +1641,13 @@ p {
 }
 .promo-pct{
   position:absolute;
-  top:.12em;
-  right:-.32em;
-  width:1.55rem;
-  height:1.55rem;
+  top:20px;
+  right:-40px;
+  width:2.55rem;
+  height:2.55rem;
   border-radius:50%;
   background:#1b1464;
-  font-size:1.05rem;
+  font-size:2.05rem;
   font-style:normal;
   letter-spacing:0;
   display:flex;
@@ -1714,7 +1714,7 @@ p {
   .formulario .c-hs-form .hs-submit {
     text-align: center; }
     .formulario .c-hs-form .hs-submit .hs-button {
-      background-color: #ffd62c;
+      background-color: #f21fd6;
       color: #10337d;
       border: 0;
       font-family: "IBMPlexSans-Bold";
