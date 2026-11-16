@@ -2780,7 +2780,7 @@ p {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 .tyc {
   background-color: #004FEF;
-  padding-bottom: 90px; }
+  padding-bottom: 10px; }
   .tyc .accordion .accordion-item {
     border: 0px;
     background-color: transparent; }
