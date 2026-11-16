@@ -1,0 +1,197 @@
+.seccion_gracias{
+    background-image: url("https://9068661.fs1.hubspotusercontent-na1.net/hubfs/9068661/assets/img/gracias_kt_bg.png");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+
+    div{
+        position: relative;
+    }
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+    *{
+        box-sizing: border-box;
+        transition: all 0.3s ease;
+    }
+
+    .muneco{
+        width: 120px;
+        position: absolute;
+        left: 0;
+        top: 70px;        
+        img{
+            width: 100%;
+            height: auto;
+        }      
+
+    }
+
+    .muneco_right{
+        width: 162px;
+        position: absolute;
+        right: 0;
+        bottom: 0;        
+        img{
+            width: 100%;
+            height: auto;
+        } 
+    }
+    .circle{
+        width: 640px;
+        position: absolute;
+        bottom:0;
+        left: 0;
+
+        img{
+            width: 100%;
+            height: auto;
+        } 
+
+    }
+
+    .container{
+        height: 100vh;
+        z-index: 10;
+
+        .row{
+            .col-md-6{
+                height: 100vh;
+            }
+        }
+    }
+
+    .nina{
+        width: 100%;
+        max-width: 420px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .right_side{
+        width: 100%;
+        max-width: 420px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap:40px
+    }
+
+    h1{
+        text-align: inherit;
+        line-height: 54px;
+        border-width: 0px;
+        margin: 0px;
+        padding: 0px;
+        letter-spacing: 0px;
+        font-weight: 500;
+        font-size: 45px;
+        color: #ffffff;
+        font-family: 'OpenSans-Bold';  
+    }
+
+    h2{
+        text-align: inherit;
+        line-height: 27px;
+        border-width: 0px;
+        margin: 0px;
+        padding: 0px;
+        letter-spacing: 0px;
+        font-size: 20px;
+        color: #ffffff;
+        font-family: 'OpenSans-Regular';  
+    }
+
+    .hashtag{
+        width: 100%;
+        max-width: 206px;
+        height: 38px;
+        border-radius: 19px;
+        background-color: rgba(#ffffff, 0.64);
+        color: #020F9F;
+        font-family: 'IBMPlexSans-Bold';   
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 19px;
+        letter-spacing: -0.5px;
+    }
+
+    .btn_visitar{
+        width: 100%;
+        max-width:364px;
+        position: relative;
+        left: 0;
+
+        &:hover{
+            left: 5px;
+        }
+    }
+}
+
+
+
+@media (max-width:768px){
+    .seccion_gracias{
+
+
+        .nina{
+            display: none;
+        }
+        .muneco{
+            width: 90px;
+        }
+
+        .muneco_right{
+            width: 110px;
+        }
+
+
+        .circle{
+            display: none ;
+        }
+
+        .container{
+            
+
+            .row{
+                .col-md-6{
+                    height: auto;
+                    .right_side{
+                        min-height: 100vh;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        max-width: 100%;
+                        padding-top: 50px;
+                        
+                        h1{
+                            text-align: center;
+                        }
+
+                        h2{
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+
+        .btn_visitar{
+            left: 0;
+            top: 0;
+
+            &:hover{
+                left: 0;
+                top: 5px;
+            }
+        }
+    }
+}
